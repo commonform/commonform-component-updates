@@ -1,5 +1,5 @@
 ```javascript
-const updates = require('commonform-component-updates')
+const updates = require('@commonform/component-updates')
 const assert = require('assert')
 
 const component = 'https://example.com/component'

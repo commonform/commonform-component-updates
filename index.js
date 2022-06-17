@@ -15,7 +15,7 @@ module.exports = (form, { cache, parallel = 1 }, callback) => {
         path,
         reference: { component: url, version: currentVersion }
       } = found
-      if (cache.get) {
+      if (cache && cache.get) {
         cache.get(url, (error, versions) => {
           if (error || !versions) downloadAndCache()
           withVersions(null, versions)
@@ -26,7 +26,7 @@ module.exports = (form, { cache, parallel = 1 }, callback) => {
         downloadVersions(url, (error, versions) => {
           if (error) return withVersions(error)
           if (!versions) return withVersions(null, false)
-          if (cache.put) cache.put(url, versions, () => finish())
+          if (cache && cache.put) cache.put(url, versions, () => finish())
           else finish()
 
           function finish (error) {

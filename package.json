@@ -9,13 +9,13 @@
     "index.js"
   ],
   "dependencies": {
-    "concat-stream": "^2.0.0",
     "is-object": "^1.0.2",
     "json-parse-errback": "^2.0.1",
     "legal-versioning-compare": "^1.0.0",
     "legal-versioning-upgrade": "^1.0.0",
     "once": "^1.4.0",
-    "run-parallel-limit": "^1.1.0"
+    "run-parallel-limit": "^1.1.0",
+    "simple-concat": "^1.0.1"
   },
   "devDependencies": {
     "commonform-predicate": "^4.0.0",

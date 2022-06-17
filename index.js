@@ -1,5 +1,5 @@
 const compareVersions = require('legal-versioning-compare')
-const concat = require('concat-stream')
+const concat = require('simple-concat')
 const https = require('https')
 const isObject = require('is-object')
 const isUpgrade = require('legal-versioning-upgrade')

@@ -78,8 +78,9 @@ function findComponents (form) {
   }
 }
 
-function downloadVersions (url, callback) {
+function downloadVersions (component, callback) {
   callback = once(callback)
+  const url = component + '.json'
   https.request(url)
     .once('error', callback)
     .once('timeout', callback)

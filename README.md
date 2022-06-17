@@ -9,7 +9,7 @@ const versions = ['1.0.0', '2.0.0', '3.0.0']
 const reference = {
   component,
   version: versions[0],
-  substitutions: { terms: {}, headings: {} }
+  substitutions: { terms: {}, headings: {}, blanks: {}}
 }
 
 updates(
